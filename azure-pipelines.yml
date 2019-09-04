@@ -49,6 +49,6 @@ steps:
   inputs:
     appType: webApp
     azureSubscription: 'cicdtest'
-    appName: '<Name of web app>'
+    appName: 'cicdtestwykim'
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
