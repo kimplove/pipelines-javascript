@@ -39,6 +39,11 @@ steps:
 
 - task: PublishBuildArtifacts@1
 
+- script:
+    npm install -g vsts-npm-auth --registry https://pkgs.dev.azure.com/devsmartofficeskt/_packaging/cicdtest/npm/registry/ --always-auth false
+    vsts-npm-auth -config .npmrc
+  displayName: 'auth'
+
 - task: Npm@1
   inputs:
      command: publish
