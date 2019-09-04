@@ -48,7 +48,7 @@ steps:
 - task: AzureWebApp@1
   inputs:
     appType: webApp
-    azureSubscription: '<Azure service connections>'
+    azureSubscription: 'cicdtest'
     appName: '<Name of web app>'
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
