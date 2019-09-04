@@ -22,5 +22,7 @@ steps:
 - script: |
     npm install
     npm -v
+    pwd
+    ls
     npm run build
   displayName: 'npm install and build'
